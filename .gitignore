@@ -1,3 +1,5 @@
 .idea/
 terraform.tfstate*
 .terraform*
+examples/terraform.tfstate*
+examples/.terraform*
