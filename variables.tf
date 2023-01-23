@@ -1,6 +1,7 @@
 variable "ami_id" {
   description = "AMI to use for the instance"
   type        = string
+  default     = "ami-0addfae420fd47aab"
 }
 
 variable "instance_type" {
@@ -11,13 +12,11 @@ variable "instance_type" {
 variable "instance_count" {
   description = "Number of instances to provision"
   type        = number
-  default     = 1
 }
 
 variable "vpc_security_group_ids" {
   description = "List of security group IDs to associate"
   type        = list(string)
-  default     = []
 }
 
 variable "subnet_id" {
