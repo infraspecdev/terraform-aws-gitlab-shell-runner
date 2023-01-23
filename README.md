@@ -70,4 +70,4 @@ No outputs.
 
 ## Authors
 
-Module managed by [Infraspec](https://github.com/infraspecdev).
+Module maintained by [Infraspec](https://github.com/infraspecdev).
