@@ -1,0 +1,12 @@
+#! /bin/bash
+
+sudo gitlab-runner register \
+  --non-interactive \
+  --url ${gitlab_url} \
+  --registration-token ${runner_registration_token} \
+  --executor shell \
+  --description ${runner_description} \
+  --tag-list ${runner_tags} \
+  --run-untagged=${run_untagged_jobs} \
+  --locked=${runner_locked} \
+  --access-level="not_protected"
