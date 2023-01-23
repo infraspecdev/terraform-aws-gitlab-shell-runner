@@ -1,0 +1,12 @@
+{
+  "branches": [
+    "main"
+  ],
+  "debug": false,
+  "ci": true,
+  "dryRun": false,
+  "plugins": [
+    "@semantic-release/changelog",
+    "@semantic-release/git"
+  ]
+}
