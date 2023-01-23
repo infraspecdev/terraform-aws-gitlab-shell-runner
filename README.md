@@ -6,9 +6,9 @@ This Terraform module provisions an AWS EC2 instance and configures it as a GitL
 
 ```hcl
 module "gitlab_shell_runner" {
-	source = "https://github.com/infraspecdev/terraform-aws-gitlab-shell-runner"
+  source = "https://github.com/infraspecdev/terraform-aws-gitlab-shell-runner"
 
-	ami_id                    = "ami-0addfae420fd47aab"
+  ami_id                    = "ami-0addfae420fd47aab"
   instance_type             = "t2.micro"
   instance_count            = 2
   vpc_security_group_ids    = ["sg-0b0b0b0b0b0b0b0b0"]
