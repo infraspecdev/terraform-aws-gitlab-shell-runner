@@ -1,5 +1,5 @@
 locals {
-  tags = {
+  default_tags = {
     Name      = "gitlab-shell-runner"
     ManagedBy = "Terraform"
   }
@@ -20,7 +20,7 @@ resource "aws_key_pair" "this" {
   public_key = var.ssh_public_key
 
   tags = merge(
-    local.tags,
+    local.default_tags,
     var.additional_tags,
   )
 }
@@ -37,7 +37,7 @@ resource "aws_instance" "this" {
   user_data_replace_on_change = true
 
   tags = merge(
-    local.tags,
+    local.default_tags,
     var.additional_tags,
   )
 }
