@@ -23,7 +23,6 @@ variable "vpc_security_group_ids" {
 variable "subnet_id" {
   description = "VPC Subnet ID to launch in"
   type        = string
-  default     = ""
 }
 
 variable "additional_tags" {
@@ -33,12 +32,12 @@ variable "additional_tags" {
 }
 
 variable "gitlab_url" {
-  description = "Gitlab URL"
+  description = "URL of your Gitlab instance"
   type        = string
 }
 
 variable "runner_registration_token" {
-  description = "Gitlab registration token"
+  description = "Registration token for Gitlab Runners"
   type        = string
 }
 
@@ -49,25 +48,25 @@ variable "runner_description" {
 }
 
 variable "runner_tags" {
-  description = "Runner tags"
+  description = "Tags for Gitlab Runners for filtering"
   type        = list(string)
   default     = ["shell", "aws"]
 }
 
 variable "run_untagged_jobs" {
-  description = "Run untagged jobs or not"
+  description = "Should run untagged jobs or not"
   type        = bool
   default     = true
 }
 
 variable "runner_locked" {
-  description = "Lock the runner or not"
+  description = "Should Lock the runners or not"
   type        = bool
   default     = false
 }
 
 variable "ssh_public_key" {
-  description = "SSH public key to use for the key pair"
+  description = "Existing SSH public key to use for the key pair"
   type        = string
   default     = null
 }
