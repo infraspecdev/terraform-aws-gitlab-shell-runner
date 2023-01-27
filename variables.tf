@@ -7,11 +7,13 @@ variable "ami_id" {
 variable "instance_type" {
   description = "Type of instance to provision"
   type        = string
+  default     = "t2.micro"
 }
 
 variable "instance_count" {
   description = "Number of instances to provision"
   type        = number
+  default     = 1
 }
 
 variable "vpc_security_group_ids" {
