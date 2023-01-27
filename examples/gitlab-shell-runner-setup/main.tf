@@ -1,5 +1,5 @@
 module "gitlab_shell_runner" {
-  source = "../"
+  source = "../../"
 
   ami_id                    = "ami-0addfae420fd47aab"
   instance_type             = "t2.micro"

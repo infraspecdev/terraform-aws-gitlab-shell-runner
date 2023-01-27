@@ -19,6 +19,10 @@ module "gitlab_shell_runner" {
 }
 ```
 
+## Examples
+
+[Example](examples/gitlab-shell-runner-setup)
+
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements

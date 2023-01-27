@@ -1,6 +1,5 @@
 .idea/
 terraform.tfstate*
 .terraform*
-examples/terraform.tfstate*
-examples/.terraform*
-.infracost/
+examples/gitlab-shell-runner-setup/terraform.tfstate*
+examples/gitlab-shell-runner-setup.terraform*
